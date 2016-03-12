@@ -86,7 +86,7 @@ class Ball {
     void initialize() {
         this->x = 400;
         this->y = 297;
-        this->dx = 0.1;
+        this->dx = 0.15;
         this->dy = 0;
 
         this->shape.setSize(sf::Vector2f(10, 10));
@@ -100,7 +100,7 @@ class Ball {
             int delta = player2->getY() - this->y;
             if(fabs(delta) < 50) {
                 this->x = 769;
-                this->dx = (float) -(fabs(this->dx) + 0.05);
+                this->dx = (float) -(fabs(this->dx) + 0.03);
                 changeDy(delta);
             }
         }
@@ -108,7 +108,7 @@ class Ball {
             int delta = player1->getY() -this->y;
             if(fabs(delta) < 50) {
                 this->x = 31;
-                this->dx = (float) (fabs(this->dx) + 0.05);
+                this->dx = (float) (fabs(this->dx) + 0.03);
                 changeDy(delta);
             }
         }
