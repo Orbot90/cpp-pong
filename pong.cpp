@@ -150,19 +150,13 @@ class Ball {
         }
 
         if(fabs(dy) > fabs(dx)) {
-            if(dy < 0) {
-                if(delta > 0) {
-                    dy = (float) -fabs(dx);
-                } else {
-                    dy = (float) fabs(dx);
-                }
+            
+            if(delta > 0) {
+                dy = (float) -fabs(dx);
             } else {
-                if(delta > 0) {
-                    dy = (float) fabs(dx);
-                } else {
-                    dy = (float) -fabs(dx);
-                }
+                dy = (float) fabs(dx);
             }
+            
         }
     }
 public:
