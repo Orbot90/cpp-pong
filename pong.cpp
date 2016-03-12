@@ -32,14 +32,14 @@ public:
         if(this->player != 1) {
             if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
                 if(this->y >= 50) {
-                    this->y -= time * 0.3;
+                    this->y -= time * 0.5;
                     this->setY(this->y);
                 }
             }
             else {
                 if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
                     if(this->y <= 550) {
-                        this->y += time * 0.3;
+                        this->y += time * 0.5;
                         this->setY(this->y);
                     }
                 }
@@ -48,13 +48,13 @@ public:
         else {
             if(sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
                 if(this->y >= 50) {
-                    this->y -= time * 0.3;
+                    this->y -= time * 0.5;
                     this->setY(this->y);
                 }
             }
             else if(sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
                 if(this->y <= 550) {
-                    this->y += time * 0.3;
+                    this->y += time * 0.5;
                     this->setY(this->y);
                 }
             }
